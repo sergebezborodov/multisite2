@@ -69,7 +69,7 @@ class MultiSite extends Component
      */
     protected $_manager;
 
-    const URL_RULE_CLASS = 'UrlRule';
+    const URL_RULE_CLASS = 'multisite2\UrlRule';
 
     public function __construct($manager, $config = [])
     {
@@ -154,8 +154,7 @@ class MultiSite extends Component
             }
 
             /** @var BaseRule $rule */
-            // TODO: change!!!
-            $rule = Yii::createComponent($config);
+            $rule = \Yii::createObject($config);
             $rule->init();
 
             $rules[] = $rule;

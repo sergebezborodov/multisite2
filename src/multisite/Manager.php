@@ -40,9 +40,9 @@ class Manager extends Component
      */
     protected $_active;
 
-    const UNIT_CLASS = 'Unit';
+    const UNIT_CLASS = '\multisite2\Unit';
 
-    const MULTISITE_CLASS = 'Site';
+    const MULTISITE_CLASS = '\multisite2\Site';
 
 
     /**
@@ -72,9 +72,9 @@ class Manager extends Component
                 if (empty($config['class'])) {
                     $config['class'] = self::UNIT_CLASS;
                 }
-                /** @var MMultiSiteUnit $unit */
+                /** @var Unit $unit */
                 // TODO: change!!!
-                $unit = Yii::createComponent($config);
+                $unit = \Yii::createObject($config);
                 $unit->type = $type;
                 $unit->name = $name;
                 $unit->init();
@@ -151,9 +151,8 @@ class Manager extends Component
                 $config['class'] = self::MULTISITE_CLASS;
             }
 
-            /** @var MMultiSite $ms */
-            // TODO: change
-            $ms = Yii::createComponent($config, $this);
+            /** @var MultiSite $ms */
+            $ms = \Yii::createObject($config, $this);
             $ms->name = $name;
             $ms->init();
 
