@@ -1,7 +1,7 @@
 <?php
 
 
-namespace multisite;
+namespace multisite2;
 
 class Exception extends \Exception
 {}

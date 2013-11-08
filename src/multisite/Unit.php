@@ -1,7 +1,7 @@
 <?php
 
 
-namespace multisite;
+namespace multisite2;
 
 use yii\base\Object;
 
