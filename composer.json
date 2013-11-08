@@ -1,0 +1,24 @@
+{
+    "name": "sergebezborodov/multisite2",
+    "type": "library",
+    "description": "Multisite component for Yii Framework 2",
+    "keywords": ["multisite", "yii2"],
+    "homepage": "https://github.com/sergebezborodov/multisite2",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Serge Bezborodov",
+            "email": "serge@bezborodov.net",
+            "homepage": "http://bezborodov.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "yiisoft/yii2": "dev-master",
+        "yiisoft/yii2-composer": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "multisite2\\": "./src" }
+    }
+}
