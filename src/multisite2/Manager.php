@@ -73,8 +73,7 @@ class Manager extends Component
                     $config['class'] = self::UNIT_CLASS;
                 }
                 /** @var Unit $unit */
-                // TODO: change!!!
-                $unit = \Yii::createObject($config);
+                $unit = \Yii::createObject($config, $this);
                 $unit->type = $type;
                 $unit->name = $name;
                 $unit->init();

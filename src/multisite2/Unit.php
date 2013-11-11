@@ -11,6 +11,11 @@ use yii\base\Object;
 class Unit extends Object
 {
     /**
+     * @var Manager
+     */
+    public $manager;
+
+    /**
      * @var int
      */
     public $id;
@@ -29,6 +34,14 @@ class Unit extends Object
      * @var array
      */
     public $attributes = array();
+
+    public function __construct($manager, $config = [])
+    {
+        $this->manager = $manager;
+
+        parent::__construct($config);
+    }
+
 
     /**
      * Init unit instance
