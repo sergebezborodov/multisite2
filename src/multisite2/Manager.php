@@ -73,7 +73,7 @@ class Manager extends Component
                     $config['class'] = self::UNIT_CLASS;
                 }
                 /** @var Unit $unit */
-                $unit = \Yii::createObject($config, $this);
+                $unit = \Yii::createObject($config, [$this]);
                 $unit->type = $type;
                 $unit->name = $name;
                 $unit->init();
@@ -151,7 +151,7 @@ class Manager extends Component
             }
 
             /** @var MultiSite $ms */
-            $ms = \Yii::createObject($config, $this);
+            $ms = \Yii::createObject($config, [$this]);
             $ms->name = $name;
             $ms->init();
 
