@@ -42,7 +42,7 @@ class Manager extends Component
 
     const UNIT_CLASS = '\multisite2\Unit';
 
-    const MULTISITE_CLASS = '\multisite2\Site';
+    const MULTISITE_CLASS = '\multisite2\MultiSite';
 
 
     /**
