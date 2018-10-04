@@ -3,12 +3,11 @@
 
 namespace multisite2;
 
-use yii\base\Object;
 
 /**
  * Base rule for matching
  */
-abstract class BaseRule extends Object
+abstract class BaseRule extends \yii\base\BaseObject
 {
     /**
      * Init instance

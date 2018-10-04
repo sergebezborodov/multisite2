@@ -3,12 +3,11 @@
 
 namespace multisite2;
 
-use yii\base\Object;
 
 /**
  * Multisite unit
  */
-class Unit extends Object
+class Unit extends \yii\base\BaseObject
 {
     /**
      * @var Manager
